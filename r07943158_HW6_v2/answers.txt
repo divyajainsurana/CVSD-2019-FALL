@@ -1,0 +1,49 @@
+(A) 
+A-1.How many flip-flops are chained? 
+32
+
+A-2.How many scan cells in every scan chain, respectively? 
+Some have 27 and others have 26
+
+A-3.What are the inputs and outputs of these scan chains? 
+test_siXX for scan chain XX
+test_soXX for scan chain XX
+
+A-4.What is the name of the scan enable pin for your scan chain? 
+test_se
+
+(B) B-1.What is the area before scan chain insertion?
+1663032.755070
+ B-2.What is the area after scan chain insertion?
+1940998.143150
+ B-3.How much is the area overhead percentage of scan chain? 
+16.714%
+
+B-4.Try to explain why scan chain introduces area overhead. 
+Scan-chain consumes a lot of routing resources.
+
+(C) Ignore the input external and output external delay. C-1.How long (ns) is the critical path delay before scan chain insertion?
+0.12 ns
+ C-2.How long the critical path after scan chain insertion?
+0.31 ns
+ C-3.How many percent is the path delay overhead? 
+30%
+
+C-4.Sometimes, the individual gate delay changes in the critical path. 
+Try to explain why? 
+The increase of delay along the normal data paths include:
+—Extra gate delay due to the multiplexer
+—Extra delay due to the capacitive loading of the scan-wiring at each flip-flop’s output
+
+
+(D) 
+D-1.How many total faults (uncollapsed) are there in the circuit? 
+81677 
+
+D-2.How many patterns do we have? 
+193
+
+D-3.What is the test coverage (%)?
+ 99.72%
+ D-4.What is the fault coverage (%)? 
+99.74%
